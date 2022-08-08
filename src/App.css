@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( to bottom, #68eacc 0%, #497be8 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.todo-app{
+  display:flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:25%;
+  min-height: 400px;
+  background: rgb(255, 255, 255); 
+   text-align: center;
+   margin: 120px auto;
+  border-radius: 20px;
+ padding-bottom: 200px;
+ position: relative;
+left: 300x;
+}
+h1{
+  margin: 32px 0;
+  font-size: 30px;
+}
+.complete{
+  text-decoration: line-through;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.todo-form{
+    margin-bottom: 32px;
+  }
+   
+  .todo-input{
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+border: 2px solid rgba(17,122,255,1);
+    width: 250px;
+   outline: none;
+  }
+  .todo-button{  
+     padding: 12px;
+    border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none; 
+    background:rgba(255, 27, 228)0%;
+   color: #fff;
+   margin-left: 8px;
+   text-transform: capitalize;
+  }
+  .todo-container{
+    display: flex;
+flex-direction: row;
+position: relative;
+  }
+  .todo-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      margin: 4px auto;
+      background: linear-gradient(rgba(189, 0, 199)0%, rgba(227, 0, 216)100%);
+      color:#fff;
+      border-radius: 5px;
+      padding: 16px;
+      width: 90%;
+  }
+  .iconscontainer{  
+    display:flex;
+    align-items: center;
+    font-size: 24px;
+cursor: pointer;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .icon{
+color:rgb(253, 0, 0);
+
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
+ 
+ 
